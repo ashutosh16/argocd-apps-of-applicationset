@@ -20,7 +20,7 @@ spec:
         targetRevision: master
         path: guestbook
       destination:
-        server: '{{.url}}'
+        server: 'https://kubernetes.default.svc'
         namespace: gmuselli
       syncPolicy:
         automated:
