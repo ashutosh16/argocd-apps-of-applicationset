@@ -5,11 +5,11 @@ metadata:
 spec:
   goTemplate: true
   generators:
-  - git:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
-    revision: master
-    directories:
-     - path: '*'
+    - git:
+        repoURL: https://github.com/argoproj/argocd-example-apps.git
+        revision: master
+        directories:
+          - path: guestbook
   template:
     metadata:
       name: '{{.name}}'
