@@ -12,7 +12,7 @@ spec:
           - path: guestbook
   template:
     metadata:
-      name: '{{.name}}'
+      name: 'argocd-apps-of-applicationset'
     spec:
       project: default
       source:
