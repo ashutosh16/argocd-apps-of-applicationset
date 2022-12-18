@@ -21,7 +21,7 @@ spec:
         path: guestbook
       destination:
         server: 'https://kubernetes.default.svc'
-        namespace: gmuselli
+        namespace: testns1
       syncPolicy:
         automated:
           prune: true
