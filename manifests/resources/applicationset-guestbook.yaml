@@ -10,8 +10,7 @@ spec:
         revision: master
         directories:
           - path: 'guestbook'
-        organization: argoproj
-        allBranches: false
+     
   template:
     metadata:
       name: 'dev'
