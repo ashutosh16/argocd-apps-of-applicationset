@@ -9,16 +9,16 @@ spec:
         repoURL: https://github.com/argoproj/argocd-example-apps.git
         revision: master
         directories:
-          - path: '*'
+          - path: 'guestbook'
   template:
     metadata:
-      name: '{{path}}'
+      name: 'dev'
     spec:
       project: default
       source:
         repoURL: https://github.com/argoproj/argocd-example-apps.git
         targetRevision: master
-        path: '*'
+        path: 'guestbook'
         directory:
           jsonnet: {}
       destination:
