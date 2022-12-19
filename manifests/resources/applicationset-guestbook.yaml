@@ -12,7 +12,7 @@ spec:
           - path: '*'
   template:
     metadata:
-      name: '{{path}}-dev'
+      name: 'dev'
     spec:
       project: default
       source:
