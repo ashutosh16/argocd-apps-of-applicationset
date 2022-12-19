@@ -19,11 +19,13 @@ spec:
         repoURL: https://github.com/argoproj/argocd-example-apps.git
         targetRevision: master
         path: '{{path}}'
+        directory:
+          jsonnet: {}
       destination:
         server: 'https://kubernetes.default.svc'
         namespace: testns1
       syncPolicy:
         automated:
-          prune: true
-          allowEmpty: true
-          selfHeal: true
+          prune: false
+          allowEmpty: false
+          selfHeal: false
